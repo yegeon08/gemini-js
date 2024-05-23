@@ -7,7 +7,7 @@ async function run() {
   // For text-only input, use the gemini-pro model
   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
-  const prompt = "예능 한 편 만들어줘";
+  const prompt = "안녕, 반가워!";
 
   const result = await model.generateContent(prompt);
   const response = await result.response;
